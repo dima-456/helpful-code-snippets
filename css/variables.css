@@ -1,0 +1,31 @@
+/* this is how you can set css variables for the whole of your site. edit variable names however makes sense to you, and add as many as you need */
+
+:root {
+    --background-color: #hexcode;
+    --primary-text-color: #hexcode;
+    --highlight-color-one: #hexcode;
+    --highlight-color-two: #hexcode;
+}
+
+/* when you are ready to use these variables, you will call them by using var(). below are some examples of how that could look */
+
+/* this would apply the background color variable to the body element, and change the type color throughout the body to your primary text color */
+
+body {
+    background: var(--background-color);
+    color: var(--primary-text-color);
+}
+
+/* this would add a 1px solid border to the bottom of all links within paragraph tags */
+
+p a {
+    border-bottom: 1px solid var(--highlight-color-one);
+    transition: 1s all;
+}
+
+/* this would change the border color to your second highlight color when the link is hovered over */
+
+p a:hover {
+    border-bottom: 1px solid var(--highlight-color-two);
+    transition: 1s all;
+}

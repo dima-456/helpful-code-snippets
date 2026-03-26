@@ -1,0 +1,25 @@
+/* if you want to add a background image to a section, this is the code that can get you started. your element — div, section, main, whatever — will need to have a height and width set to make sure it displays the image correctly.  */
+
+yourelement {
+    width: 100%;
+    /* this will make the element take up the full viewport height, but you can adjust this to fit your needs */
+    height: 100vh; 
+    /* this sets the path to your image */
+    background-image: url("path/to/your/image.jpg"); 
+    /* this will cover the entire element with the image so that it fills the space proportionally  */
+    background-size: cover;
+    /* this centers the background image — play around with those numbers to make sure the focal point of the photo always stays in view */
+    background-position: 50% 50%;
+    /* this prevents the background image from repeating */
+    background-repeat: no-repeat;
+}
+
+/* and here's that code again, with no comments for easier copy and pasting */
+yourelement {
+    width: 100%;
+    height: 100vh; 
+    background-image: url("path/to/your/image.jpg"); 
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
