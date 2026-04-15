@@ -1,0 +1,17 @@
+/* this is css code to normalize your image sizes */
+
+.carousel-inner img {
+    /* the width property tells the image to fill the entire container */
+    width: 100%;
+    /* the aspect-ratio property crops all images to be the same size so the carousel doesn't jump around. this one is 16/9, but you can change that to any size you need (3/4, 1/1, 9/16, etc) */
+    aspect-ratio: 16/9;
+    /* object-fit tells the image to scale without squishing the image to fit in our set aspect ratio */
+    object-fit: cover;
+}
+
+/* this is the same code without comments for a cleaner copy and paste */
+.carousel-inner img {
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}
